@@ -44,7 +44,7 @@ save.addEventListener('click',(e) =>{
 	document.cookie = `fontcolor=${fontcolor.value}`
 	
 	document.documentElement.style.setProperty(
-		"--fontcolor",
+		"--fontsize",
 		fontSize.value + "px"
 		
 	)
