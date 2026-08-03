@@ -17,11 +17,11 @@ function getCookies(name){
 	return null;
 }
 
-const savedfontsize = getCookies("Fontsize");
-const savedcolor = getCookies("Fontcolor");
+const savedfontsize = getCookies("fontsize");
+const savedcolor = getCookies("fontcolor");
 
 if(savedfontsize){
-	fontSize = savedfontsize;
+	fontSize.value = savedfontsize;
 	document.documentElement.style.setProperty(
 		"--fontsize",
 		savedfontsize + "px"
@@ -29,7 +29,7 @@ if(savedfontsize){
 }
 
 if(savedcolor){
-	fontcolor = savedcolor;
+	fontcolor.value = savedcolor;
 	document.documentElement.style.setProperty(
 		"--fontcolor",
 		savedcolor 
@@ -40,8 +40,8 @@ if(savedcolor){
 save.addEventListener('click',(e) =>{
 	e.preventDefault();
 
-	document.cookie = `Fontsize=${fontSize.value}`
-	document.cookie = `Fontcolor=${fontcolor.value}`
+	document.cookie = `fontsize=${fontSize.value}`
+	document.cookie = `fontcolor=${fontcolor.value}`
 	
 	document.documentElement.style.setProperty(
 		"--fontcolor",
