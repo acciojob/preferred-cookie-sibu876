@@ -45,13 +45,13 @@ save.addEventListener('click',(e) =>{
 	
 	document.documentElement.style.setProperty(
 		"--fontcolor",
-		fontSize.value;
+		fontSize.value + "px"
 		
 	)
 
 	document.documentElement.style.setProperty(
 		"--fontcolor",
-		fontcolor.value;
+		fontcolor.value
 		
 	)
 })
