@@ -22,9 +22,9 @@ const savedcolor = getCookies("Fontcolor");
 
 if(savedfontsize){
 	fontSize = savedfontsize;
-	document.doccumentElement.style.setProperty(
+	document.documentElement.style.setProperty(
 		"--fontsize",
-		savedfontsize + "px";
+		savedfontsize + "px"
 	)
 }
 
